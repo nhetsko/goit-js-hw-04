@@ -1,9 +1,12 @@
 "use strict"
 // Task 2
 function calcAverageCalories(days) {
-    let total = 0;
+   if (days.length === 0) {
+    return 0; 
+  }
+  let total = 0;
     for (const day of days) {
-        total += day.calories;
+      total += day.calories;
     }
     return total / days.length;
     
